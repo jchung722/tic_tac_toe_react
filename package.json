@@ -10,7 +10,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server",
-    "test": "jest"
+    "test": "jest",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
