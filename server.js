@@ -1,5 +1,12 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const path = require('path');
+const port = process.env.PORT || 8080;
+const app = express();
 
-app.use(express.static(__dirname + '/app'));
-app.listen(process.env.PORT || 8080);
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/*', function (req, res) {
+    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+});
+
+app.listen(port);
