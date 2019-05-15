@@ -26,6 +26,7 @@
   "homepage": "https://github.com/jchung722/tic_tac_toe_react#readme",
   "dependencies": {
     "babel-jest": "^24.8.0",
+    "express": "^4.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
