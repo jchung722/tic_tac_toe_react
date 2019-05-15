@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "jest",
-    "heroku-postbuild": "webpack -p"
+    "prod": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "webpack -p",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
